@@ -1,6 +1,5 @@
 package com.example.demo.entity;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
@@ -10,7 +9,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.PostPersist;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -38,8 +36,7 @@ public class Order {
 	@Column(name = "status")
 	private String status;
 	
-	@Column(name = "total_amount")
-	private BigDecimal totalAmount;
+	private Double totalAmount;
 	
 	@Column(name = "created_date")
 	private LocalDateTime createdDate;
