@@ -17,4 +17,5 @@ public class OrderCreatedEvent {
 	private List<OrderItemDto> items;
 	private Double totalAmount;
 	private String status;
+	private String PaymentType;
 }
